@@ -1,0 +1,99 @@
+
+.body {
+  background: hsl(0, 0%, 95%);
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sedans, .suvs, .luxury {
+  max-width: 444px;
+  padding: 50px;
+}
+
+.sedans {
+  background:hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background: hsl(179, 100%, 13%);
+}
+
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%)
+}
+
+p {
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5rem;
+}
+
+.button {
+  background-color: hsl(0, 0%, 95%);
+  margin-top: 20px;
+  padding: 15px 32px;
+  border: 2px solid white;
+  border-radius: 50px;
+  display: inline-block;
+  text-align: center;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+
+/* Styles rules for button text colors */
+#orange {
+  color: hsl(31, 77%, 52%);
+}
+
+#cyan {
+  color:hsl(184, 100%, 22%);
+}
+
+#dark-cyan {
+  color:hsl(179, 100%, 13%);
+}
+
+.button:hover #orange,
+.button:hover #cyan,
+.button:hover #dark-cyan {
+  color:aliceblue;
+}
+
+
+.button:hover {
+  background-color: transparent;
+}
+
+
+
+@media (min-width: 866px) {
+  .flexbox {
+    display: flex;
+    flex-direction: row;
+    margin: 150px auto;
+    min-width: 850px;
+  }
+
+  .sedans, .suvs, .luxury {
+  max-width: 450px;
+  padding: 50px;
+  font-size: 14px;
+  }
+
+  p {
+    padding-bottom: 3.5em;
+  }
+}
